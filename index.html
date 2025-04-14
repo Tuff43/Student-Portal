@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominican University Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <img src="/placeholder.svg?height=100&width=100" alt="Dominican University Logo" class="logo">
+            <h1>Dominican University</h1>
+            <p>Student Portal</p>
+            <p class="location">Samonda, Ibadan, Nigeria</p>
+        </div>
+        <div class="login-form">
+            <h2>Login to Your Account</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="studentId">Student ID</label>
+                    <input type="text" id="studentId" placeholder="Enter your student ID" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+            <div class="login-footer">
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <p class="help-text">Need help? Contact <a href="mailto:support@dominican.edu.ng">IT Support</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

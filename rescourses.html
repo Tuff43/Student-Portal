@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Dominican University Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+    <header class="main-header">
+        <div class="header-left">
+            <button id="menuToggle" class="menu-toggle">☰</button>
+            <img src="/placeholder.svg?height=50&width=50" alt="Dominican University Logo" class="header-logo">
+            <h1>Dominican University</h1>
+        </div>
+        <div class="header-right">
+            <div class="notifications">
+                <span class="notification-icon">🔔</span>
+                <span class="notification-count">3</span>
+            </div>
+            <div class="user-profile">
+                <img src="/placeholder.svg?height=40&width=40" alt="Student Profile" class="profile-pic">
+                <span class="username">John Doe</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <nav class="sidebar" id="sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="dashboard.html"><span>📊</span> Dashboard</a></li>
+                <li class="nav-item"><a href="courses.html"><span>📚</span> Courses</a></li>
+                <li class="nav-item"><a href="assignments.html"><span>📝</span> Assignments</a></li>
+                <li class="nav-item"><a href="messages.html"><span>💬</span> Messages</a></li>
+                <li class="nav-item active"><a href="resources.html"><span>📁</span> Resources</a></li>
+                <li class="nav-item"><a href="profile.html"><span>👤</span> Profile</a></li>
+                <li class="nav-item logout"><a href="#" id="logoutBtn"><span>🚪</span> Logout</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="page-header">
+                <h2>Resources</h2>
+                <div class="resource-search">
+                    <input type="text" placeholder="Search resources...">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+
+            <div class="resources-container">
+                <div class="resources-categories">
+                    <h3>Categories</h3>
+                    <ul class="category-list">
+                        <li class="category-item active" data-category="all">All Resources</li>
+                        <li class="category-item" data-category="academic">Academic</li>
+                        <li class="category-item" data-category="library">Library</li>
+                        <li class="category-item" data-category="financial">Financial</li>
+                        <li class="category-item" data-category="career">Career</li>
+                        <li class="category-item" data-category="health">Health & Wellness</li>
+                        <li class="category-item" data-category="technical">Technical Support</li>
+                    </ul>
+                </div>
+
+                <div class="resources-grid">
+                    <div class="resource-card academic">
+                        <div class="resource-icon">📚</div>
+                        <div class="resource-details">
+                            <h3>University Library</h3>
+                            <p>Access the university's digital library resources, including e-books, journals, and research papers.</p>
+                            <a href="#" class="resource-link">Access Library</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card academic">
+                        <div class="resource-icon">📝</div>
+                        <div class="resource-details">
+                            <h3>Examination Portal</h3>
+                            <p>Access examination timetables, past papers, and examination guidelines.</p>
+                            <a href="#" class="resource-link">Access Portal</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card financial">
+                        <div class="resource-icon">💰</div>
+                        <div class="resource-details">
+                            <h3>Fee Payment</h3>
+                            <p>Make payments for tuition, accommodation, and other university fees.</p>
+                            <a href="#" class="resource-link">Make Payment</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card academic">
+                        <div class="resource-icon">📅</div>
+                        <div class="resource-details">
+                            <h3>Academic Calendar</h3>
+                            <p>View the academic calendar for important dates and events.</p>
+                            <a href="#" class="resource-link">View Calendar</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card academic">
+                        <div class="resource-icon">🏆</div>
+                        <div class="resource-details">
+                            <h3>Results Portal</h3>
+                            <p>Access your examination results and academic transcripts.</p>
+                            <a href="#" class="resource-link">View Results</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card academic">
+                        <div class="resource-icon">📋</div>
+                        <div class="resource-details">
+                            <h3>Course Registration</h3>
+                            <p>Register for courses for the upcoming semester.</p>
+                            <a href="#" class="resource-link">Register Courses</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card career">
+                        <div class="resource-icon">💼</div>
+                        <div class="resource-details">
+                            <h3>Career Services</h3>
+                            <p>Access career counseling, job opportunities, and internship placements.</p>
+                            <a href="#" class="resource-link">Explore Careers</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card health">
+                        <div class="resource-icon">🏥</div>
+                        <div class="resource-details">
+                            <h3>Health Services</h3>
+                            <p>Access information about the university health center and health insurance.</p>
+                            <a href="#" class="resource-link">Health Information</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card technical">
+                        <div class="resource-icon">💻</div>
+                        <div class="resource-details">
+                            <h3>IT Support</h3>
+                            <p>Get technical support for university systems and applications.</p>
+                            <a href="#" class="resource-link">Get Support</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card academic">
+                        <div class="resource-icon">🌐</div>
+                        <div class="resource-details">
+                            <h3>Online Learning Resources</h3>
+                            <p>Access additional learning resources and online courses.</p>
+                            <a href="#" class="resource-link">Explore Resources</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card financial">
+                        <div class="resource-icon">🎓</div>
+                        <div class="resource-details">
+                            <h3>Scholarships</h3>
+                            <p>Explore scholarship opportunities and financial aid options.</p>
+                            <a href="#" class="resource-link">Find Scholarships</a>
+                        </div>
+                    </div>
+
+                    <div class="resource-card health">
+                        <div class="resource-icon">🧠</div>
+                        <div class="resource-details">
+                            <h3>Counseling Services</h3>
+                            <p>Access mental health resources and counseling services.</p>
+                            <a href="#" class="resource-link">Get Help</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

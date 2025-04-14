@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Dominican University Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+    <header class="main-header">
+        <div class="header-left">
+            <button id="menuToggle" class="menu-toggle">☰</button>
+            <img src="/placeholder.svg?height=50&width=50" alt="Dominican University Logo" class="header-logo">
+            <h1>Dominican University</h1>
+        </div>
+        <div class="header-right">
+            <div class="notifications">
+                <span class="notification-icon">🔔</span>
+                <span class="notification-count">3</span>
+            </div>
+            <div class="user-profile">
+                <img src="/placeholder.svg?height=40&width=40" alt="Student Profile" class="profile-pic">
+                <span class="username">John Doe</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <nav class="sidebar" id="sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="dashboard.html"><span>📊</span> Dashboard</a></li>
+                <li class="nav-item active"><a href="courses.html"><span>📚</span> Courses</a></li>
+                <li class="nav-item"><a href="assignments.html"><span>📝</span> Assignments</a></li>
+                <li class="nav-item"><a href="messages.html"><span>💬</span> Messages</a></li>
+                <li class="nav-item"><a href="resources.html"><span>📁</span> Resources</a></li>
+                <li class="nav-item"><a href="profile.html"><span>👤</span> Profile</a></li>
+                <li class="nav-item logout"><a href="#" id="logoutBtn"><span>🚪</span> Logout</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="page-header">
+                <h2>My Courses</h2>
+                <div class="semester-selector">
+                    <label for="semesterSelect">Semester:</label>
+                    <select id="semesterSelect">
+                        <option value="current">Current Semester (2nd, 2024/2025)</option>
+                        <option value="previous">Previous Semester (1st, 2024/2025)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="courses-container">
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-code">CSC301</div>
+                        <div class="course-status">In Progress</div>
+                    </div>
+                    <div class="course-body">
+                        <h3>Advanced Programming</h3>
+                        <p class="course-instructor">Dr. Adebayo Ogunlesi</p>
+                        <p class="course-schedule">Mon, Wed: 08:00 - 10:00</p>
+                        <p class="course-venue">Block B, Room 205</p>
+                        <div class="course-progress">
+                            <div class="progress-label">
+                                <span>Progress</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="#" class="course-btn">View Materials</a>
+                        <a href="#" class="course-btn">Assignments</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-code">MTH202</div>
+                        <div class="course-status">In Progress</div>
+                    </div>
+                    <div class="course-body">
+                        <h3>Linear Algebra</h3>
+                        <p class="course-instructor">Dr. Funmilayo Adesina</p>
+                        <p class="course-schedule">Tue, Thu: 10:15 - 12:15</p>
+                        <p class="course-venue">Science Building, Room 103</p>
+                        <div class="course-progress">
+                            <div class="progress-label">
+                                <span>Progress</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="#" class="course-btn">View Materials</a>
+                        <a href="#" class="course-btn">Assignments</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-code">ENG205</div>
+                        <div class="course-status">In Progress</div>
+                    </div>
+                    <div class="course-body">
+                        <h3>Technical Writing</h3>
+                        <p class="course-instructor">Prof. Chinua Achebe</p>
+                        <p class="course-schedule">Wed, Fri: 13:00 - 15:00</p>
+                        <p class="course-venue">Arts Building, Room 302</p>
+                        <div class="course-progress">
+                            <div class="progress-label">
+                                <span>Progress</span>
+                                <span>55%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 55%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="#" class="course-btn">View Materials</a>
+                        <a href="#" class="course-btn">Assignments</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-code">PHY201</div>
+                        <div class="course-status">In Progress</div>
+                    </div>
+                    <div class="course-body">
+                        <h3>Electromagnetism</h3>
+                        <p class="course-instructor">Dr. Oluwaseun Johnson</p>
+                        <p class="course-schedule">Tue, Thu: 15:30 - 17:30</p>
+                        <p class="course-venue">Science Building, Room 105</p>
+                        <div class="course-progress">
+                            <div class="progress-label">
+                                <span>Progress</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-footer">
+                        <a href="#" class="course-btn">View Materials</a>
+                        <a href="#" class="course-btn">Assignments</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-details" id="courseDetails">
+                <div class="course-details-header">
+                    <h3>CSC301: Advanced Programming</h3>
+                    <button class="close-btn" id="closeDetails">×</button>
+                </div>
+                <div class="course-details-body">
+                    <div class="course-tabs">
+                        <button class="tab-btn active" data-tab="materials">Materials</button>
+                        <button class="tab-btn" data-tab="assignments">Assignments</button>
+                        <button class="tab-btn" data-tab="grades">Grades</button>
+                        <button class="tab-btn" data-tab="announcements">Announcements</button>
+                    </div>
+
+                    <div class="tab-content active" id="materials">
+                        <h4>Course Materials</h4>
+                        <ul class="materials-list">
+                            <li>
+                                <div class="material-icon">📄</div>
+                                <div class="material-details">
+                                    <h5>Week 1: Introduction to Advanced Programming</h5>
+                                    <p>Lecture slides and notes on programming paradigms</p>
+                                </div>
+                                <a href="#" class="download-btn">Download</a>
+                            </li>
+                            <li>
+                                <div class="material-icon">📄</div>
+                                <div class="material-details">
+                                    <h5>Week 2: Object-Oriented Programming</h5>
+                                    <p>Lecture slides and code examples</p>
+                                </div>
+                                <a href="#" class="download-btn">Download</a>
+                            </li>
+                            <li>
+                                <div class="material-icon">📄</div>
+                                <div class="material-details">
+                                    <h5>Week 3: Functional Programming</h5>
+                                    <p>Lecture slides and practice exercises</p>
+                                </div>
+                                <a href="#" class="download-btn">Download</a>
+                            </li>
+                            <li>
+                                <div class="material-icon">📄</div>
+                                <div class="material-details">
+                                    <h5>Week 4: Data Structures</h5>
+                                    <p>Lecture slides and implementation examples</p>
+                                </div>
+                                <a href="#" class="download-btn">Download</a>
+                            </li>
+                            <li>
+                                <div class="material-icon">📄</div>
+                                <div class="material-details">
+                                    <h5>Week 5: Algorithms</h5>
+                                    <p>Lecture slides and algorithm analysis</p>
+                                </div>
+                                <a href="#" class="download-btn">Download</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Dominican University Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+    <header class="main-header">
+        <div class="header-left">
+            <button id="menuToggle" class="menu-toggle">☰</button>
+            <img src="/placeholder.svg?height=50&width=50" alt="Dominican University Logo" class="header-logo">
+            <h1>Dominican University</h1>
+        </div>
+        <div class="header-right">
+            <div class="notifications">
+                <span class="notification-icon">🔔</span>
+                <span class="notification-count">3</span>
+            </div>
+            <div class="user-profile">
+                <img src="/placeholder.svg?height=40&width=40" alt="Student Profile" class="profile-pic">
+                <span class="username">John Doe</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <nav class="sidebar" id="sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="dashboard.html"><span>📊</span> Dashboard</a></li>
+                <li class="nav-item"><a href="courses.html"><span>📚</span> Courses</a></li>
+                <li class="nav-item"><a href="assignments.html"><span>📝</span> Assignments</a></li>
+                <li class="nav-item active"><a href="messages.html"><span>💬</span> Messages</a></li>
+                <li class="nav-item"><a href="resources.html"><span>📁</span> Resources</a></li>
+                <li class="nav-item"><a href="profile.html"><span>👤</span> Profile</a></li>
+                <li class="nav-item logout"><a href="#" id="logoutBtn"><span>🚪</span> Logout</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="page-header">
+                <h2>Messages</h2>
+                <button class="new-message-btn" id="newMessageBtn">
+                    <span>+</span> New Message
+                </button>
+            </div>
+
+            <div class="messages-container">
+                <div class="messages-sidebar">
+                    <div class="messages-search">
+                        <input type="text" placeholder="Search messages...">
+                    </div>
+                    <div class="message-tabs">
+                        <button class="message-tab active" data-tab="inbox">Inbox</button>
+                        <button class="message-tab" data-tab="sent">Sent</button>
+                        <button class="message-tab" data-tab="archived">Archived</button>
+                    </div>
+                    <div class="message-list">
+                        <div class="message-item active unread">
+                            <img src="/placeholder.svg?height=40&width=40" alt="Dr. Adebayo Ogunlesi" class="message-avatar">
+                            <div class="message-preview">
+                                <div class="message-header">
+                                    <h4>Dr. Adebayo Ogunlesi</h4>
+                                    <span class="message-time">Yesterday</span>
+                                </div>
+                                <p class="message-subject">Assignment Deadline</p>
+                                <p class="message-excerpt">Please remember to submit your assignment by Friday...</p>
+                            </div>
+                        </div>
+                        <div class="message-item unread">
+                            <img src="/placeholder.svg?height=40&width=40" alt="Dr. Funmilayo Adesina" class="message-avatar">
+                            <div class="message-preview">
+                                <div class="message-header">
+                                    <h4>Dr. Funmilayo Adesina</h4>
+                                    <span class="message-time">2 days ago</span>
+                                </div>
+                                <p class="message-subject">Tutorial Session Rescheduled</p>
+                                <p class="message-excerpt">The tutorial session for tomorrow has been rescheduled...</p>
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <img src="/placeholder.svg?height=40&width=40" alt="Prof. Chinua Achebe" class="message-avatar">
+                            <div class="message-preview">
+                                <div class="message-header">
+                                    <h4>Prof. Chinua Achebe</h4>
+                                    <span class="message-time">May 5, 2025</span>
+                                </div>
+                                <p class="message-subject">Term Paper Guidelines</p>
+                                <p class="message-excerpt">I've uploaded the detailed guidelines for your term paper...</p>
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <img src="/placeholder.svg?height=40&width=40" alt="Dr. Oluwaseun Johnson" class="message-avatar">
+                            <div class="message-preview">
+                                <div class="message-header">
+                                    <h4>Dr. Oluwaseun Johnson</h4>
+                                    <span class="message-time">May 3, 2025</span>
+                                </div>
+                                <p class="message-subject">Lab Report Feedback</p>
+                                <p class="message-excerpt">I've reviewed your lab report and have some feedback...</p>
+                            </div>
+                        </div>
+                        <div class="message-item">
+                            <img src="/placeholder.svg?height=40&width=40" alt="Academic Office" class="message-avatar">
+                            <div class="message-preview">
+                                <div class="message-header">
+                                    <h4>Academic Office</h4>
+                                    <span class="message-time">April 28, 2025</span>
+                                </div>
+                                <p class="message-subject">Examination Timetable</p>
+                                <p class="message-excerpt">The examination timetable for the second semester...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-content">
+                    <div class="message-view">
+                        <div class="message-view-header">
+                            <div class="message-sender-info">
+                                <img src="/placeholder.svg?height=50&width=50" alt="Dr. Adebayo Ogunlesi" class="sender-avatar">
+                                <div class="sender-details">
+                                    <h3>Dr. Adebayo Ogunlesi</h3>
+                                    <p>CSC301: Advanced Programming</p>
+                                </div>
+                            </div>
+                            <div class="message-actions">
+                                <button class="message-action-btn">
+                                    <span>↩️</span> Reply
+                                </button>
+                                <button class="message-action-btn">
+                                    <span>📁</span> Archive
+                                </button>
+                                <button class="message-action-btn">
+                                    <span>🗑️</span> Delete
+                                </button>
+                            </div>
+                        </div>
+                        <div class="message-view-body">
+                            <div class="message-subject-line">
+                                <h3>Assignment Deadline</h3>
+                                <span class="message-date">May 11, 2025, 2:45 PM</span>
+                            </div>
+                            <div class="message-content-text">
+                                <p>Dear John,</p>
+                                <p>I hope this message finds you well. I wanted to remind you about the upcoming deadline for the Data Structures Implementation assignment.</p>
+                                <p>The assignment is due this Friday, May 18, 2025, by 11:59 PM. Please make sure to submit your work on time through the student portal.</p>
+                                <p>The assignment requires you to implement a binary search tree and a hash table in your preferred programming language. You should also include a comparative analysis of their performance for different operations.</p>
+                                <p>If you have any questions or need clarification on any aspect of the assignment, please don't hesitate to reach out to me.</p>
+                                <p>Best regards,<br>Dr. Adebayo Ogunlesi<br>Department of Computer Science<br>Dominican University</p>
+                            </div>
+                            <div class="message-attachments">
+                                <h4>Attachments (1)</h4>
+                                <div class="attachment-item">
+                                    <span class="attachment-icon">📄</span>
+                                    <div class="attachment-details">
+                                        <p class="attachment-name">Assignment_Guidelines.pdf</p>
+                                        <p class="attachment-size">245 KB</p>
+                                    </div>
+                                    <button class="attachment-download">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="message-reply">
+                        <div class="reply-header">
+                            <h4>Reply to Dr. Adebayo Ogunlesi</h4>
+                        </div>
+                        <div class="reply-body">
+                            <textarea placeholder="Type your reply here..."></textarea>
+                            <div class="reply-actions">
+                                <div class="reply-attachments">
+                                    <button class="attach-btn">
+                                        <span>📎</span> Attach Files
+                                    </button>
+                                </div>
+                                <button class="send-btn">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-message-modal" id="newMessageModal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>New Message</h3>
+                        <button class="close-modal" id="closeModal">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="newMessageForm">
+                            <div class="form-group">
+                                <label for="recipient">To:</label>
+                                <select id="recipient">
+                                    <option value="">Select recipient</option>
+                                    <option value="adebayo">Dr. Adebayo Ogunlesi (CSC301)</option>
+                                    <option value="funmilayo">Dr. Funmilayo Adesina (MTH202)</option>
+                                    <option value="chinua">Prof. Chinua Achebe (ENG205)</option>
+                                    <option value="oluwaseun">Dr. Oluwaseun Johnson (PHY201)</option>
+                                    <option value="academic">Academic Office</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" placeholder="Enter subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="messageBody">Message:</label>
+                                <textarea id="messageBody" rows="8" placeholder="Type your message here..."></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="attachments">Attachments:</label>
+                                <div class="file-upload">
+                                    <input type="file" id="attachments" multiple>
+                                    <label for="attachments" class="file-label">
+                                        <span class="file-icon">📎</span>
+                                        <span>Choose files or drag and drop</span>
+                                    </label>
+                                </div>
+                                <div class="file-list" id="attachmentList"></div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="cancel-btn" id="cancelMessage">Cancel</button>
+                                <button type="submit" class="send-btn">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Dominican University Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+    <header class="main-header">
+        <div class="header-left">
+            <button id="menuToggle" class="menu-toggle">☰</button>
+            <img src="/placeholder.svg?height=50&width=50" alt="Dominican University Logo" class="header-logo">
+            <h1>Dominican University</h1>
+        </div>
+        <div class="header-right">
+            <div class="notifications">
+                <span class="notification-icon">🔔</span>
+                <span class="notification-count">3</span>
+            </div>
+            <div class="user-profile">
+                <img src="/placeholder.svg?height=40&width=40" alt="Student Profile" class="profile-pic">
+                <span class="username">John Doe</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <nav class="sidebar" id="sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item active"><a href="dashboard.html"><span>📊</span> Dashboard</a></li>
+                <li class="nav-item"><a href="courses.html"><span>📚</span> Courses</a></li>
+                <li class="nav-item"><a href="assignments.html"><span>📝</span> Assignments</a></li>
+                <li class="nav-item"><a href="messages.html"><span>💬</span> Messages</a></li>
+                <li class="nav-item"><a href="resources.html"><span>📁</span> Resources</a></li>
+                <li class="nav-item"><a href="profile.html"><span>👤</span> Profile</a></li>
+                <li class="nav-item logout"><a href="#" id="logoutBtn"><span>🚪</span> Logout</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="welcome-banner">
+                <h2>Welcome back, John!</h2>
+                <p>Today is <span id="currentDate"></span></p>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="dashboard-card announcements">
+                    <h3>Announcements</h3>
+                    <ul class="announcement-list">
+                        <li>
+                            <span class="announcement-date">May 15, 2025</span>
+                            <h4>End of Semester Examination Schedule</h4>
+                            <p>The examination timetable for the second semester has been released. Please check your course pages for details.</p>
+                        </li>
+                        <li>
+                            <span class="announcement-date">May 10, 2025</span>
+                            <h4>Library Extended Hours</h4>
+                            <p>The university library will extend its opening hours during the examination period.</p>
+                        </li>
+                        <li>
+                            <span class="announcement-date">May 5, 2025</span>
+                            <h4>Campus Maintenance Notice</h4>
+                            <p>The Science Building will be closed for maintenance on Saturday, May 8th.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-card upcoming">
+                    <h3>Upcoming Deadlines</h3>
+                    <ul class="deadline-list">
+                        <li>
+                            <div class="deadline-info">
+                                <h4>CSC301: Programming Assignment</h4>
+                                <p>Due: May 18, 2025</p>
+                            </div>
+                            <span class="deadline-status urgent">2 days left</span>
+                        </li>
+                        <li>
+                            <div class="deadline-info">
+                                <h4>ENG205: Term Paper</h4>
+                                <p>Due: May 25, 2025</p>
+                            </div>
+                            <span class="deadline-status">9 days left</span>
+                        </li>
+                        <li>
+                            <div class="deadline-info">
+                                <h4>MTH202: Quiz</h4>
+                                <p>Due: May 20, 2025</p>
+                            </div>
+                            <span class="deadline-status">4 days left</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-card courses">
+                    <h3>My Courses</h3>
+                    <div class="course-grid">
+                        <div class="course-item">
+                            <div class="course-icon">CSC</div>
+                            <div class="course-details">
+                                <h4>CSC301: Advanced Programming</h4>
+                                <p>Dr. Adebayo Ogunlesi</p>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-icon">MTH</div>
+                            <div class="course-details">
+                                <h4>MTH202: Linear Algebra</h4>
+                                <p>Dr. Funmilayo Adesina</p>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-icon">ENG</div>
+                            <div class="course-details">
+                                <h4>ENG205: Technical Writing</h4>
+                                <p>Prof. Chinua Achebe</p>
+                            </div>
+                        </div>
+                        <div class="course-item">
+                            <div class="course-icon">PHY</div>
+                            <div class="course-details">
+                                <h4>PHY201: Electromagnetism</h4>
+                                <p>Dr. Oluwaseun Johnson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card timetable">
+                    <h3>Today's Schedule</h3>
+                    <div class="timetable-container">
+                        <div class="timetable-item">
+                            <span class="time">08:00 - 10:00</span>
+                            <div class="timetable-details">
+                                <h4>CSC301: Advanced Programming</h4>
+                                <p>Venue: Block B, Room 205</p>
+                            </div>
+                        </div>
+                        <div class="timetable-item">
+                            <span class="time">10:15 - 12:15</span>
+                            <div class="timetable-details">
+                                <h4>MTH202: Linear Algebra</h4>
+                                <p>Venue: Science Building, Room 103</p>
+                            </div>
+                        </div>
+                        <div class="timetable-item">
+                            <span class="time">13:00 - 15:00</span>
+                            <div class="timetable-details">
+                                <h4>ENG205: Technical Writing</h4>
+                                <p>Venue: Arts Building, Room 302</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-card messages">
+                    <h3>Recent Messages</h3>
+                    <ul class="message-list">
+                        <li>
+                            <img src="/placeholder.svg?height=40&width=40" alt="Professor" class="message-avatar">
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h4>Dr. Adebayo Ogunlesi</h4>
+                                    <span class="message-time">Yesterday</span>
+                                </div>
+                                <p>Please remember to submit your assignment by Friday...</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="/placeholder.svg?height=40&width=40" alt="Professor" class="message-avatar">
+                            <div class="message-content">
+                                <div class="message-header">
+                                    <h4>Dr. Funmilayo Adesina</h4>
+                                    <span class="message-time">2 days ago</span>
+                                </div>
+                                <p>The tutorial session for tomorrow has been rescheduled...</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="messages.html" class="view-all">View All Messages</a>
+                </div>
+
+                <div class="dashboard-card resources">
+                    <h3>Quick Links</h3>
+                    <div class="resources-grid">
+                        <a href="#" class="resource-item">
+                            <span class="resource-icon">📚</span>
+                            <span class="resource-name">Library</span>
+                        </a>
+                        <a href="#" class="resource-item">
+                            <span class="resource-icon">📝</span>
+                            <span class="resource-name">Exam Portal</span>
+                        </a>
+                        <a href="#" class="resource-item">
+                            <span class="resource-icon">💰</span>
+                            <span class="resource-name">Fee Payment</span>
+                        </a>
+                        <a href="#" class="resource-item">
+                            <span class="resource-icon">📅</span>
+                            <span class="resource-name">Academic Calendar</span>
+                        </a>
+                        <a href="#" class="resource-item">
+                            <span class="resource-icon">🏆</span>
+                            <span class="resource-name">Results</span>
+                        </a>
+                        <a href="#" class="resource-item">
+                            <span class="resource-icon">📋</span>
+                            <span class="resource-name">Course Registration</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments - Dominican University Student Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+    <header class="main-header">
+        <div class="header-left">
+            <button id="menuToggle" class="menu-toggle">☰</button>
+            <img src="/placeholder.svg?height=50&width=50" alt="Dominican University Logo" class="header-logo">
+            <h1>Dominican University</h1>
+        </div>
+        <div class="header-right">
+            <div class="notifications">
+                <span class="notification-icon">🔔</span>
+                <span class="notification-count">3</span>
+            </div>
+            <div class="user-profile">
+                <img src="/placeholder.svg?height=40&width=40" alt="Student Profile" class="profile-pic">
+                <span class="username">John Doe</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <nav class="sidebar" id="sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="dashboard.html"><span>📊</span> Dashboard</a></li>
+                <li class="nav-item"><a href="courses.html"><span>📚</span> Courses</a></li>
+                <li class="nav-item active"><a href="assignments.html"><span>📝</span> Assignments</a></li>
+                <li class="nav-item"><a href="messages.html"><span>💬</span> Messages</a></li>
+                <li class="nav-item"><a href="resources.html"><span>📁</span> Resources</a></li>
+                <li class="nav-item"><a href="profile.html"><span>👤</span> Profile</a></li>
+                <li class="nav-item logout"><a href="#" id="logoutBtn"><span>🚪</span> Logout</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="page-header">
+                <h2>Assignments</h2>
+                <div class="assignment-filters">
+                    <select id="courseFilter">
+                        <option value="all">All Courses</option>
+                        <option value="CSC301">CSC301: Advanced Programming</option>
+                        <option value="MTH202">MTH202: Linear Algebra</option>
+                        <option value="ENG205">ENG205: Technical Writing</option>
+                        <option value="PHY201">PHY201: Electromagnetism</option>
+                    </select>
+                    <select id="statusFilter">
+                        <option value="all">All Status</option>
+                        <option value="pending">Pending</option>
+                        <option value="submitted">Submitted</option>
+                        <option value="graded">Graded</option>
+                        <option value="overdue">Overdue</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="assignments-container">
+                <div class="assignment-card urgent">
+                    <div class="assignment-header">
+                        <span class="course-code">CSC301</span>
+                        <span class="assignment-status pending">Pending</span>
+                    </div>
+                    <div class="assignment-body">
+                        <h3>Programming Assignment: Data Structures Implementation</h3>
+                        <p class="assignment-description">Implement a binary search tree and a hash table in your preferred programming language. Compare their performance for different operations.</p>
+                        <div class="assignment-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Assigned:</span>
+                                <span class="meta-value">May 5, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Due:</span>
+                                <span class="meta-value">May 18, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Points:</span>
+                                <span class="meta-value">20</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment-footer">
+                        <button class="assignment-btn view-btn">View Details</button>
+                        <button class="assignment-btn submit-btn">Submit Assignment</button>
+                    </div>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-header">
+                        <span class="course-code">MTH202</span>
+                        <span class="assignment-status pending">Pending</span>
+                    </div>
+                    <div class="assignment-body">
+                        <h3>Quiz: Eigenvalues and Eigenvectors</h3>
+                        <p class="assignment-description">Complete the online quiz on eigenvalues and eigenvectors. The quiz consists of 10 multiple-choice questions and 2 problem-solving questions.</p>
+                        <div class="assignment-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Assigned:</span>
+                                <span class="meta-value">May 10, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Due:</span>
+                                <span class="meta-value">May 20, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Points:</span>
+                                <span class="meta-value">15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment-footer">
+                        <button class="assignment-btn view-btn">View Details</button>
+                        <button class="assignment-btn submit-btn">Take Quiz</button>
+                    </div>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-header">
+                        <span class="course-code">ENG205</span>
+                        <span class="assignment-status pending">Pending</span>
+                    </div>
+                    <div class="assignment-body">
+                        <h3>Term Paper: Technical Documentation</h3>
+                        <p class="assignment-description">Write a comprehensive technical documentation for a software application of your choice. The document should include user guides, API documentation, and system architecture.</p>
+                        <div class="assignment-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Assigned:</span>
+                                <span class="meta-value">April 25, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Due:</span>
+                                <span class="meta-value">May 25, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Points:</span>
+                                <span class="meta-value">30</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment-footer">
+                        <button class="assignment-btn view-btn">View Details</button>
+                        <button class="assignment-btn submit-btn">Submit Assignment</button>
+                    </div>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-header">
+                        <span class="course-code">PHY201</span>
+                        <span class="assignment-status submitted">Submitted</span>
+                    </div>
+                    <div class="assignment-body">
+                        <h3>Lab Report: Electromagnetic Induction</h3>
+                        <p class="assignment-description">Write a detailed lab report on the electromagnetic induction experiment conducted in the laboratory. Include your observations, calculations, and conclusions.</p>
+                        <div class="assignment-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Assigned:</span>
+                                <span class="meta-value">April 28, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Due:</span>
+                                <span class="meta-value">May 12, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Points:</span>
+                                <span class="meta-value">25</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment-footer">
+                        <button class="assignment-btn view-btn">View Details</button>
+                        <button class="assignment-btn submitted-btn">View Submission</button>
+                    </div>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="assignment-header">
+                        <span class="course-code">CSC301</span>
+                        <span class="assignment-status graded">Graded</span>
+                    </div>
+                    <div class="assignment-body">
+                        <h3>Programming Assignment: Algorithm Analysis</h3>
+                        <p class="assignment-description">Implement and analyze the time complexity of sorting algorithms: Bubble Sort, Insertion Sort, Merge Sort, and Quick Sort.</p>
+                        <div class="assignment-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Assigned:</span>
+                                <span class="meta-value">April 15, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Due:</span>
+                                <span class="meta-value">April 30, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Points:</span>
+                                <span class="meta-value">20/20</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="assignment-footer">
+                        <button class="assignment-btn view-btn">View Details</button>
+                        <button class="assignment-btn feedback-btn">View Feedback</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="assignment-submission" id="assignmentSubmission">
+                <div class="submission-header">
+                    <h3>Submit Assignment: Programming Assignment: Data Structures Implementation</h3>
+                    <button class="close-btn" id="closeSubmission">×</button>
+                </div>
+                <div class="submission-body">
+                    <form id="submissionForm">
+                        <div class="form-group">
+                            <label for="submissionText">Submission Notes (Optional)</label>
+                            <textarea id="submissionText" rows="4" placeholder="Add any notes for your instructor"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="submissionFile">Upload Files</label>
+                            <div class="file-upload">
+                                <input type="file" id="submissionFile" multiple>
+                                <label for="submissionFile" class="file-label">
+                                    <span class="file-icon">📎</span>
+                                    <span>Choose files or drag and drop</span>
+                                </label>
+                            </div>
+                            <div class="file-list" id="fileList">
+                                <div class="file-item">
+                                    <span class="file-name">BST.java</span>
+                                    <span class="file-size">15 KB</span>
+                                    <button class="file-remove">×</button>
+                                </div>
+                                <div class="file-item">
+                                    <span class="file-name">HashTable.java</span>
+                                    <span class="file-size">12 KB</span>
+                                    <button class="file-remove">×</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="cancel-btn">Cancel</button>
+                            <button type="submit" class="submit-btn">Submit Assignment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
